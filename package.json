@@ -1,0 +1,46 @@
+{
+  "name": "tcgen",
+  "version": "0.0.1",
+  "description": "Modular boilerplate for nodejs",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/c8 ./node_modules/.bin/allrounder -s lib",
+    "devtest": "./node_modules/.bin/nodemon --watch lib --exec 'npm test'",
+    "build": "npm run mbjs -- build",
+    "all": "npm run lint && npm test && npm run build && npm run docs",
+    "docs": "./node_modules/.bin/jsdoc -c .jsdoc.json",
+    "lint": "./node_modules/.bin/standard",
+    "mbjs": "./node_modules/.bin/mbjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeofnode/tcgen.git"
+  },
+  "keywords": [
+    "unit",
+    "testcase",
+    "interceptor",
+    "instrumentation",
+    "class",
+    "file",
+    "method",
+    "function"
+  ],
+  "author": "Ramesh Kumar <codeofnode@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/codeofnode/tcgen/issues"
+  },
+  "homepage": "https://github.com/codeofnode/tcgen#readme",
+  "devDependencies": {
+    "allrounder": "^0.7.1",
+    "c8": "^6.0.1",
+    "jsdoc": "^3.6.3",
+    "minami": "^1.2.3",
+    "nodemon": "^2.0.1",
+    "standard": "^14.3.1"
+  },
+  "dependencies": {
+    "fs-extra": "^8.1.0"
+  }
+}

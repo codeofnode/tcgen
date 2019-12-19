@@ -1,0 +1,12 @@
+{
+  "type": "unit",
+  "tests" : [
+    {
+      "summary": "Requiring the file",
+      "request": {},
+      "assertion": {
+        "output": true
+      }
+    }
+  ]
+}
